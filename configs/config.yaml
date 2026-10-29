@@ -1,0 +1,17 @@
+dataset: "synthetic"
+cluster:
+  num_nodes: 64
+  cpu_per_node: 32
+  gpu_per_node: 4
+  mem_per_node: 128
+random_seed: 42
+simulation_time: 86400
+sim_jobs: 100
+rl_timesteps: 1000000
+reward_weights:
+  w1: 1.0 # waiting_time
+  w2: 0.5 # response_time
+  w3: 0.5 # makespan
+  w4: 2.0 # SLA_violations
+  w5: 0.5 # resource_utilization
+  w6: 1.0 # fairness
